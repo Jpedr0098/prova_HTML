@@ -1,6 +1,46 @@
+@import url('httpsfonts.googleapis.comcss2family=Sonowght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --btn: #473BF0;
+    --text-black: #161C2D;
+    --text-white: #FFFFFF;
+    --detalhe: #68D585;
+
+    --font-title: 'Rubik', monospace;
+    --font-body: 'Sonowght', monospace;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     width: 100vw;
     height: 100vh;
+}
+
+h1 {
+    font-family: var(--font-title);
+    color: var(--text-white);
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+p {
+    font-family: var(--font-body);
+    color: var(--text-white);
+    font-weight: 400;
+    font-size: 1.18rem;
+}
+
+a {
+    font-family: var(--font-title);
+    color: var(--text-white);
+    font-weight: 700;
+    font-size: 0.93rem;
 }
 
 #header_bg::before{
@@ -14,7 +54,70 @@ header {
     z-index: -10;
 }
 
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+}
+
 #nav-bar {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
+    gap:15px;
+}
+
+#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px
+}
+
+#botao-nav {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    background-color: var(--btn);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto-central {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 37rem;
+    height: 22rem;
+    margin: 120px;
+}
+
+#texto-central h1{
+    font-family: var(--font-title);
+    font-size: 700;
+    font-size: 3.75rem;
+}
+
+#texto-central p {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 1.18rem;
+}
+
+#botao-text a{
+    display: flex;
+    width: 220px;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--btn);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-body);
 }
