@@ -121,3 +121,32 @@ a {
     font-weight: 700;
     font-family: var(--font-body);
 }
+
+#status {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.status-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 290px;
+    height: 60px;
+}
+
+.status-text h2{
+    font-size: 3rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+    color: var(--text-black);
+}
+
+.status-text p{
+    font-size: 1rem;
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--text-black);
+}
